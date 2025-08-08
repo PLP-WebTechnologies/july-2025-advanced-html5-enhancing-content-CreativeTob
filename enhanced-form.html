@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Share your creativity</title>
+  </head>
+  <body>
+    <header>
+      <h1>Share your creativity</h1>
+      <p>Welcome to our page; Established to promote creators.</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Instructions</h2>
+        <ul>
+          <li>Fill in all required fields</li>
+          <li>Use valid email and phone formats</li>
+          <li>Upload a profile picture</li>
+          <li>Review the table below for available packages</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Available Subscription Packages</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Plan</th>
+              <th>Price</th>
+              <th>Features</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Basic</td>
+              <td>$10/month</td>
+              <td>Access to basic content</td>
+            </tr>
+            <tr>
+              <td>Premium</td>
+              <td>$25/month</td>
+              <td>All content + priority support</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Watch This Introductory Video</h2>
+        <video controls width="400">
+          <source
+            src="https://youtu.be/qZFbRkJ9eoM?si=QeF3DaSPG4t1fzbM"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+          <fieldset>
+            <legend>Basic Info</legend>
+            <label for="fullname">Full Name *</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="e.g. John Doe"
+              required
+            />
+            <br /><br />
+            <label for="email">Email Address *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="e.g. john@example.com"
+              required
+            />
+            <br /><br />
+            <label for="phone">Phone Number *</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+2341234567890"
+              pattern="^\+?\d{10,15}$"
+              required
+            />
+            <br /><br />
+            <label for="dob">Date of Birth *</label>
+            <input type="date" id="dob" name="dob" required />
+            <br /><br />
+            <label for="age">Age (must be 18+)</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="18"
+              max="120"
+              placeholder="Enter age"
+              required
+            />
+
+            <br /><br />
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="">-- Select --</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="other">Other</option>
+            </select>
+          </fieldset>
+          <br /><br />
+          <fieldset>
+            <legend>More Info</legend>
+            <label>Preferred Contact Method</label>
+            <input
+              type="radio"
+              id="contact-email"
+              name="contact"
+              value="email"
+              required
+            />
+            <label for="contact-email">Email</label>
+            <input
+              type="radio"
+              id="contact-phone"
+              name="contact"
+              value="phone"
+            />
+            <label for="contact-phone">Phone</label>
+            <br /><br />
+            <label for="hobbies">Select Hobbies</label>
+            <input
+              type="checkbox"
+              id="hobby-reading"
+              name="hobbies"
+              value="Reading"
+            />
+            <label for="hobby-reading">Reading</label>
+            <input
+              type="checkbox"
+              id="hobby-sports"
+              name="hobbies"
+              value="Sports"
+            />
+            <label for="hobby-sports">Sports</label>
+            <input
+              type="checkbox"
+              id="hobby-music"
+              name="hobbies"
+              value="Music"
+            />
+            <label for="hobby-music">Music</label>
+            <br /><br />
+            <label for="bio">Short Bio</label>
+            <br />
+            <textarea
+              id="bio"
+              name="bio"
+              rows="4"
+              placeholder="Tell us about yourself..."
+            ></textarea>
+            <br /><br />
+            <label for="country">Country *</label>
+            <input
+              type="text"
+              id="country"
+              name="country"
+              placeholder="e.g. Nigeria"
+              required
+              autocomplete="country"
+            />
+            <br /><br />
+            <label for="username">Username *</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Choose a username"
+              required
+              autocomplete="username"
+            />
+            <br /><br />
+            <label for="readonly-info">Referral Code (readonly)</label>
+            <input type="text" id="readonly-info" value="PLP2025" readonly />
+            <br /><br />
+            <label for="password">Password *</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              autocomplete="new-password"
+            />
+            <br /><br />
+            <label for="profile-pic">Upload Profile Picture *</label>
+            <input
+              type="file"
+              id="profile-pic"
+              name="profile-pic"
+              accept="image/*"
+              required
+            />
+          </fieldset>
+
+          <br /><br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Enhanced Form Demo. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
